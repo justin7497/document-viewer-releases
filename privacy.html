@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>뷰어매니아 개인정보처리방침</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1b3a5f;
+      --text: #191919;
+      --muted: #555;
+      --line: #d8e2ea;
+      --bg: #f4f7fa;
+      --card: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 28px 24px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.6rem;
+      color: var(--ink);
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 1.15rem;
+      color: var(--ink);
+    }
+    p, li { font-size: 0.98rem; }
+    ul { padding-left: 1.2rem; }
+    a { color: var(--ink); }
+    .note {
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card">
+      <h1>뷰어매니아(ViewerMania) 개인정보처리방침</h1>
+      <p class="meta">
+        시행일: 2026년 10월 9일<br />
+        앱 패키지: com.viewerapp.document_viewer<br />
+        운영자: 뷰어매니아 개발자
+      </p>
+
+      <p>
+        뷰어매니아(이하 “앱”)는 이용자의 개인정보를 소중히 다루며,
+        「개인정보 보호법」 등 관련 법령을 준수합니다.
+        본 방침은 앱이 어떤 정보를 다루는지, 언제 외부로 전송하는지,
+        이용자가 선택할 수 있는 권리를 설명합니다.
+      </p>
+
+      <h2>1. 수집하는 개인정보</h2>
+      <p>앱은 회원 가입 기능을 제공하지 않으며, 이름·이메일·전화번호 등 계정식별정보를 수집하지 않습니다.</p>
+      <ul>
+        <li><strong>기기 내 문서·파일</strong>: 이용자가 연 PDF, 한글, 워드, 엑셀, 파워포인트, 텍스트 등 문서. 기본 처리는 기기 안에서 이루어집니다.</li>
+        <li><strong>앱 사용 기록(기기 저장)</strong>: 최근 연 문서 목록, 마지막 본 쪽, 보관함·폴더 정보, AI 요약 결과 캐시, 저장한 웹 링크(제목·주소·썸네일 URL) 등. SharedPreferences 등 기기 저장소에 보관됩니다.</li>
+        <li><strong>권한</strong>: 문서를 열고 보관하기 위해 저장공간(파일) 접근 권한을 요청할 수 있습니다. 권한이 없으면 해당 기능을 제한할 수 있습니다.</li>
+      </ul>
+
+      <h2>2. 개인정보의 이용 목적</h2>
+      <ul>
+        <li>문서 열람, 검색, 보관함 정리, 이어서 보기</li>
+        <li>이용자가 요청한 AI 문서 요약 제공</li>
+        <li>이용자가 저장한 웹·유튜브 링크의 제목·썸네일 표시 및 다시 열기</li>
+        <li>앱 업데이트 확인 및 설치 안내</li>
+        <li>오류·이용 문의 대응(문의 시 이용자가 제공한 내용에 한함)</li>
+      </ul>
+
+      <h2>3. 외부 전송이 일어나는 경우</h2>
+      <p>앱은 기본적으로 문서를 서버에 올리지 않습니다. 아래 경우에만 인터넷으로 데이터가 전송될 수 있습니다.</p>
+      <ul>
+        <li>
+          <strong>AI 요약(이용자 동의 후)</strong>:
+          “AI로 요약하기”를 누르고 전송에 동의하면, 문서에서 추출한 텍스트의 일부(앞쪽 일부, 분량 제한 적용)가
+          Google Gemini API(Google LLC)로 전송되어 요약이 생성됩니다.
+          주민등록번호·계좌번호 등 민감정보가 포함된 문서는 보내지 않는 것을 권장합니다.
+        </li>
+        <li>
+          <strong>내 링크 미리보기</strong>:
+          링크를 저장할 때 제목·썸네일을 가져오기 위해 해당 웹사이트 또는 YouTube(oEmbed/썸네일)에 요청이 갈 수 있습니다.
+          저장한 주소·제목·썸네일 URL은 기기에 보관됩니다.
+        </li>
+        <li>
+          <strong>앱 업데이트</strong>:
+          새 버전 확인을 위해 GitHub Releases 등 업데이트 주소에 버전 정보 요청이 갈 수 있습니다.
+          이 과정에서 일반 네트워크 통신에 필요한 기술 정보(IP 주소 등)가 서버 로그에 남을 수 있습니다.
+        </li>
+        <li>
+          <strong>문서 URL로 열기</strong>:
+          이용자가 입력한 문서 다운로드 주소로 파일을 받을 때 해당 서버와 통신합니다.
+        </li>
+      </ul>
+      <p>광고 SDK, 행동 분석(Analytics), 마케팅 트래커는 사용하지 않습니다.</p>
+
+      <h2>4. 제3자 제공 및 처리 위탁</h2>
+      <ul>
+        <li>
+          <strong>Google Gemini</strong>: AI 요약 요청 시에만 문서 텍스트가 처리됩니다.
+          Google의 개인정보 처리에 관해서는
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>을 참고하세요.
+        </li>
+        <li>
+          <strong>YouTube / 웹사이트</strong>: 링크 미리보기·열기 시 해당 서비스의 정책이 적용될 수 있습니다.
+        </li>
+        <li>
+          <strong>GitHub</strong>: 업데이트 확인·배포 파일 제공에 사용될 수 있습니다.
+        </li>
+      </ul>
+      <p>법령에 따른 요청이 있는 경우 등 법령이 허용하는 범위에서 정보가 제공될 수 있습니다.</p>
+
+      <h2>5. 보유 및 파기</h2>
+      <ul>
+        <li>기기 내 저장 데이터(최근 목록, 요약 캐시, 링크 보관 등)는 앱을 삭제하거나 해당 데이터를 지우면 함께 삭제됩니다.</li>
+        <li>AI 요약 전송분은 Google 측 정책·보관 기간에 따릅니다. 앱은 요약 결과를 기기에도 저장할 수 있으며, 이용자가 앱 데이터 삭제 시 제거됩니다.</li>
+        <li>별도 서버에 이용자 계정을 만들어 문서를 영구 보관하지 않습니다.</li>
+      </ul>
+
+      <h2>6. 이용자의 권리</h2>
+      <ul>
+        <li>AI 요약은 거부할 수 있습니다. 동의하지 않으면 문서 텍스트가 Gemini로 전송되지 않습니다.</li>
+        <li>저장한 링크는 앱에서 삭제할 수 있습니다.</li>
+        <li>최근 목록은 설정에서 비울 수 있습니다.</li>
+        <li>앱 삭제 또는 기기 설정에서 앱 데이터 삭제로 로컬 저장 정보를 제거할 수 있습니다.</li>
+        <li>파일 접근 권한은 기기 설정에서 철회할 수 있습니다.</li>
+      </ul>
+
+      <h2>7. 아동의 개인정보</h2>
+      <p>
+        앱은 만 13세 미만 아동을 대상으로 한 서비스가 아니며,
+        아동의 개인정보를 고의로 수집하지 않습니다.
+      </p>
+
+      <h2>8. 개인정보의 안전성 확보</h2>
+      <ul>
+        <li>문서의 기본 열람은 기기 로컬에서 처리합니다.</li>
+        <li>외부 전송이 필요한 기능은 HTTPS 등 일반 보안 통신을 사용합니다.</li>
+        <li>민감 문서의 AI 요약 전송은 이용자 확인 후에만 진행합니다.</li>
+      </ul>
+
+      <h2>9. 개인정보처리방침의 변경</h2>
+      <p>
+        방침 내용이 변경되면 이 페이지에 개정일과 함께 게시합니다.
+        중요한 변경이 있으면 앱 내 공지 또는 스토어 업데이트 노트 등으로 안내할 수 있습니다.
+      </p>
+
+      <h2>10. 문의</h2>
+      <p>
+        개인정보 관련 문의는 Google Play 스토어 앱 페이지의 개발자 연락처
+        또는 앱 내 안내된 문의 경로로 연락해 주세요.
+      </p>
+
+      <p class="note">
+        본 문서는 앱의 현재 기능을 기준으로 작성한 안내입니다.
+        법률 자문을 대체하지 않으며, 서비스 변경 시 내용이 갱신될 수 있습니다.
+      </p>
+    </article>
+  </main>
+</body>
+</html>
